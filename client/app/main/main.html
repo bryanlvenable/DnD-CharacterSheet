@@ -3,8 +3,8 @@
 <header class="hero-unit" id="banner">
   <div class="container">
     <img src="assets/images/D&Dlogo_white.jpg" alt="Dungeons & Dragons">
-    <h1>Space</h1>
-    <p class="lead">Begin filling out your character sheet below. Login to save.</p>
+    <h1>DnD Space</h1>
+    <p class="lead">A space for everything Dungeons & Dragons</p>
   </div>
 </header>
 
@@ -17,6 +17,60 @@
       </ul>
     </div>
   </div>
+
+<!-- Begin character sheet -->
+  <form class="character-sheet">
+      <!-- Character name -->
+      <label>Character name:</label>
+      <input type="text" placeholder="Character name" ng-model="characterName">
+      <!-- Player -->
+      <label>Player:</label>
+      <!-- Class -->
+      <label>Class:</label>
+      <input type="text" placeholder="Class" ng-model="characterClass">
+      <!-- Level -->
+      <label>Level:</label>
+      <input type="number" placeholder=1 ng-model="characterLevel">
+      <!-- Race -->
+      <label>Race:</label>
+      <input type="text" placeholder="Race" ng-model="characterLevel">
+      <!-- Alignment -->
+      <label>Alignment:</label>
+      <input type="text" placeholder="Alignment" ng-model="characterAlignment">
+      <!-- Deity -->
+      <label>Deity:</label>
+      <input type="text" placeholder="Deity" ng-model="characterDeity">
+      <!-- Size -->
+      <label>Size:</label>
+      <input type="text" placeholder="Size" ng-model="characterSize">
+      <!-- Age -->
+      <label>Age:</label>
+      <input type="number" placeholder="Age" ng-model="characterAge">
+      <!-- Gender -->
+      <label>Gender:</label>
+      <input type="text" placeholder="Gender" ng-model="characterGender">
+      <!-- Height -->
+      <label>Height:</label>
+      <input type="text" placeholder="Height" ng-model="characterHeight">
+      <!-- Weight -->
+      <label>Weight:</label>
+      <input type="text" placeholder="Weight" ng-model="characterWeight">
+      <!-- Eyes -->
+      <label>Eyes:</label>
+      <input type="text" placeholder="Eyes" ng-model="characterEyes">
+      <!-- Hair -->
+      <label>Hair:</label>
+      <input type="text" placeholder="Hair" ng-model="characterHair">
+      <!-- Appearance -->
+      <label>Appearance:</label>
+      <input type="text" placeholder="Appearance" ng-model="characterAppearance">
+      <!-- History -->
+      <label>History:</label>
+      <input type="text" placeholder="History" ng-model="characterHistory">
+      
+
+  </form>
+<!-- End character sheet -->
 
   <form class="thing-form">
     <label>Syncs in realtime across clients</label>
