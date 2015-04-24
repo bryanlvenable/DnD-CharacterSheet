@@ -1,0 +1,91 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <img src="assets/images/D&Dlogo_white.jpg" alt="Dungeons & Dragons">
+    <h1>DnD Space</h1>
+    <p class="lead">A space for everything Dungeons & Dragons</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Features:</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">
+        <li><a href="#" tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="deleteThing(thing)">&times;</button></a></li>
+      </ul>
+    </div>
+  </div>
+
+<!-- Begin character sheet -->
+  <form class="character-sheet">
+      <!-- Character name -->
+      <label>Character name:</label>
+      <input type="text" placeholder="Character name" ng-model="characterName">
+      <!-- Player -->
+      <label>Player:</label>
+      <!-- Class -->
+      <label>Class:</label>
+      <input type="text" placeholder="Class" ng-model="characterClass">
+      <!-- Level -->
+      <label>Level:</label>
+      <input type="number" placeholder=1 ng-model="characterLevel">
+      <!-- Race -->
+      <label>Race:</label>
+      <input type="text" placeholder="Race" ng-model="characterLevel">
+      <!-- Alignment -->
+      <label>Alignment:</label>
+      <input type="text" placeholder="Alignment" ng-model="characterAlignment">
+      <!-- Deity -->
+      <label>Deity:</label>
+      <input type="text" placeholder="Deity" ng-model="characterDeity">
+      <!-- Size -->
+      <label>Size:</label>
+      <input type="text" placeholder="Size" ng-model="characterSize">
+      <!-- Age -->
+      <label>Age:</label>
+      <input type="number" placeholder="Age" ng-model="characterAge">
+      <!-- Gender -->
+      <label>Gender:</label>
+      <input type="text" placeholder="Gender" ng-model="characterGender">
+      <!-- Height -->
+      <label>Height:</label>
+      <input type="text" placeholder="Height" ng-model="characterHeight">
+      <!-- Weight -->
+      <label>Weight:</label>
+      <input type="text" placeholder="Weight" ng-model="characterWeight">
+      <!-- Eyes -->
+      <label>Eyes:</label>
+      <input type="text" placeholder="Eyes" ng-model="characterEyes">
+      <!-- Hair -->
+      <label>Hair:</label>
+      <input type="text" placeholder="Hair" ng-model="characterHair">
+      <!-- Appearance -->
+      <label>Appearance:</label>
+      <input type="text" placeholder="Appearance" ng-model="characterAppearance">
+      <!-- History -->
+      <label>History:</label>
+      <input type="text" placeholder="History" ng-model="characterHistory">
+      
+
+  </form>
+<!-- End character sheet -->
+
+  <form class="thing-form">
+    <label>Syncs in realtime across clients</label>
+    <p class="input-group">
+      <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="newThing">
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary" ng-click="addThing()">Add New</button>
+      </span>
+    </p>
+  </form>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <p>Issues, comments, questions, or concerns? Email: 
+        <a href="mailto:dndspace.contact">dndspace.contact@gmail.com</a>
+  </div>
+</footer>

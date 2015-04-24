@@ -5,6 +5,10 @@ angular.module('dndCharacterSheetApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
+    },
+    {
+      'title' : 'Create A Character',
+      'link': '/character'
     }];
 
     $scope.isCollapsed = true;
