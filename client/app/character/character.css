@@ -1,41 +1,27 @@
-.thing-form {
-    margin: 20px 0;
-}
-
-.character-sheet {
-    margin: 20px 0;
+#characterName,
+#characterClass,
+#characterLevel,
+#characterBackground,
+#characterRace,
+#characterAlignment,
+#characterDeity,
+#characterSize,
+#characterAge,
+#characterGender,
+#characterHeight,
+#characterWeight,
+#characterEyes,
+#characterHair {
+    outline: none;
     border: none;
-
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    background-color:transparent !important;
+    border-bottom: 1px solid black;
 }
 
 #character-sheet {
-   background-image: url("../../assets/images/parchment.jpg");
-   background-repeat: repeat;
-}
-
-#banner {
-    border-bottom: none;
-    margin-top: -20px;
-}
-
-#banner h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-}
-
-.hero-unit {
-    position: relative;
-    padding: 30px 15px;
-    color: #F5F5F5;
-    text-align: center;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    background: #4393B9;
-}
-
-.footer {
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 70px;
-    border-top: 1px solid #E5E5E5;
+/*   background-image: url("../../assets/images/parchment.jpg");
+   background-repeat: repeat;*/
 }
