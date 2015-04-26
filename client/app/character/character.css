@@ -5,6 +5,12 @@
 .character-sheet {
     margin: 20px 0;
     border: none;
+
+}
+
+#character-sheet {
+   background-image: url("../../assets/images/parchment.jpg");
+   background-repeat: repeat;
 }
 
 #banner {

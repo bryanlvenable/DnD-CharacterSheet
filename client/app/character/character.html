@@ -1,56 +1,142 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-<div class="container">
+<div class="container" id="character-sheet">
 <!-- Begin character sheet -->
-  <form class="character-sheet">
-      <!-- Name -->
-      <label>Character name:</label>
-      <input type="text" placeholder="Character name" ng-model="characterName">
-      <!-- Player -->
-      <label>Player:</label>
-      <!-- Class -->
-      <label>Class:</label>
-      <input type="text" placeholder="Class" ng-model="characterClass">
-      <!-- Level -->
-      <label>Level:</label>
-      <input type="number" placeholder=1 ng-model="characterLevel">
-      <!-- Race -->
-      <label>Race:</label>
-      <input type="text" placeholder="Race" ng-model="characterLevel">
-      <!-- Alignment -->
-      <label>Alignment:</label>
-      <input type="text" placeholder="Alignment" ng-model="characterAlignment">
-      <!-- Deity -->
-      <label>Deity:</label>
-      <input type="text" placeholder="Deity" ng-model="characterDeity">
-      <!-- Size -->
-      <label>Size:</label>
-      <input type="text" placeholder="Size" ng-model="characterSize">
-      <!-- Age -->
-      <label>Age:</label>
-      <input type="number" placeholder="Age" ng-model="characterAge">
-      <!-- Gender -->
-      <label>Gender:</label>
-      <input type="text" placeholder="Gender" ng-model="characterGender">
-      <!-- Height -->
-      <label>Height:</label>
-      <input type="text" placeholder="Height" ng-model="characterHeight">
-      <!-- Weight -->
-      <label>Weight:</label>
-      <input type="text" placeholder="Weight" ng-model="characterWeight">
-      <!-- Eyes -->
-      <label>Eyes:</label>
-      <input type="text" placeholder="Eyes" ng-model="characterEyes">
-      <!-- Hair -->
-      <label>Hair:</label>
-      <input type="text" placeholder="Hair" ng-model="characterHair">
-      <!-- Appearance -->
-      <label>Appearance:</label>
-      <input type="text" placeholder="Appearance" ng-model="characterAppearance">
+  <form>
+    <!-- Name -->
+    <div class ="col-md-12">
+      <label for="characterName">Character name:</label>
+      <input type="text" id="characterName" placeholder="Character name" ng-model="characterName">  
+    </div>
+
+    <!-- Begin character identity -->
+    <div id="characterIdentity">
+      <div class="col-md-4">
+        <!-- Class -->
+        <label for="characterClass">Class:</label>
+        <input type="text" id="characterClass" placeholder="Class" ng-model="characterClass">
+      </div>
+      <div class"col-md-4">
+        <!-- Level -->
+        <label for="characterLevel">Level:</label>
+        <input type="number" id="characterLevel" placeholder=1 ng-model="characterLevel">
+      </div>
+      <div class"col-md-4">
+        <!-- Background -->
+        <label for="characterBackground">Background:</label>
+        <input type="number" id="characterBackground" placeholder="Background" ng-model="characterBackground">
+      </div>
+      <div class="col-md-4">
+        <!-- Player -->
+        <label>Player:</label>
+        <input type="text" id="playerName" placeholder="Player">
+      </div>
+      <div class="col-md-4">
+        <!-- Race -->
+        <label for="characterRace">Race:</label>
+        <input type="text" id="characterRace" placeholder="Race" ng-model="characterRace">
+      </div>
+      <div class="col-md-4">
+        <!-- Alignment -->
+        <label for="characterAlignment">Alignment:</label>
+        <input type="text" id="characterAlignment" placeholder="Alignment" ng-model="characterAlignment">
+      </div>
+      <div class="col-md-4">
+        <!-- Deity -->
+        <label for="characterDeity">Deity:</label>
+        <input type="text" id="characterDeity" placeholder="Deity" ng-model="characterDeity">
+      </div>
+    </div>
+    <!-- End character identity -->
+
+    <!-- Begin physical appearance -->
+    <div id="physicalAppearance">
+      <div class="col-md-4">
+        <!-- Size -->
+        <label for="characterSize">Size:</label>
+        <input type="text" id="characterSize" placeholder="Size" ng-model="characterSize">
+      </div>
+      <div class="col-md-4">
+        <!-- Age -->
+        <label for="characterAge">Age:</label>
+        <input type="number" id="characterAge" placeholder=18 ng-model="characterAge">
+      </div>
+      <div class="col-md-4">
+        <!-- Gender -->
+        <label>Gender:</label>
+        <input type="text" placeholder="Gender" ng-model="characterGender">
+      </div>
+      <div class="col-md-4">
+        <!-- Height -->
+        <label>Height:</label>
+        <input type="text" placeholder=5 ng-model="characterHeight">
+      </div>
+      <div class="col-md-4">
+        <!-- Weight -->
+        <label>Weight:</label>
+        <input type="text" placeholder="Weight" ng-model="characterWeight">
+      </div>
+      <div class="col-md-4">
+        <!-- Eyes -->
+        <label>Eyes:</label>
+        <input type="text" placeholder="Eyes" ng-model="characterEyes">
+      </div>
+      <div class="col-md-4">
+        <!-- Hair -->
+        <label>Hair:</label>
+        <input type="text" placeholder="Hair" ng-model="characterHair">
+      </div>
+      <div class="col-md-4">
+        <!-- Appearance -->
+        <label>Appearance:</label>
+        <textarea type="text" placeholder="Appearance" ng-model="characterAppearance"></textarea>
+      </div>
+    </div>
+    <!-- End physical appearance -->
+
+    <br>
+    <div class="col-md-4">
       <!-- History -->
       <label>History:</label>
       <textarea type="text" placeholder="History" ng-model="characterHistory"></textarea>
-      
+    </div>
+    <br>
+
+    <!-- Begin abilities -->
+    <div id="abilities">
+      <div class="col-md-4">
+        <!-- Strength -->
+        <label for="characterStrength">Strength:</label>
+        <input type="number" id="characterStrength" placeholder=0 ng-model="characterStrength">
+      </div>
+      <div class="col-md-4">
+        <!-- Dexterity -->
+        <label for="characterDexterity">Dexterity:</label>
+        <input type="number" id="characterDexterity" placeholder=0 ng-model="characterDexterity">
+      </div>
+      <div class="col-md-4">
+        <!-- Constitution -->
+        <label for="characterConstitution">Constitution:</label>
+        <input type="number" id="characterConstitution" placeholder=0 ng-model="characterConstitution">
+      </div>
+      <div class="col-md-4">
+        <!-- Intelligence -->
+        <label for="characterIntelligence">Intelligence:</label>
+        <input type="number" id="characterIntelligence" placeholder=0 ng-model="characterIntelligence">
+      </div>
+      <div class="col-md-4">
+        <!-- Wisdom -->
+        <label for="characterWisdom">Wisdom:</label>
+        <input type="number" id="characterWisdom" placeholder=0 ng-model="characterWisdom">
+      </div>
+      <div class="col-md-4">
+        <!-- Charisma -->
+        <label for="characterCharisma">Charisma:</label>
+        <input type="number" id="characterCharisma" placeholder=0 ng-model="characterCharisma">
+      </div>
+    </div>
+    <!-- End abilities -->
+
 
   </form>
 <!-- End character sheet -->
